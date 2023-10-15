@@ -285,10 +285,10 @@ int InitBuffer()
     // 四角形のジオメトリを定義
     float aspect = (float)WINDOW_WIDTH / WINDOW_HEIGHT;
     VERTEX vertices[] = {
-        {{-1.0f / aspect,  1.0f, 0.0f}, {-1.0f,  1.0f}},
-        {{ 1.0f / aspect,  1.0f, 0.0f}, { 1.0f,  1.0f}},
-        {{-1.0f / aspect, -1.0f, 0.0f}, {-1.0f, -1.0f}},
-        {{ 1.0f / aspect, -1.0f, 0.0f}, { 1.0f, -1.0f}},
+        {{-1.0f / aspect,  1.0f, 0.0f}, { 0.0f,  0.0f}},
+        {{ 1.0f / aspect,  1.0f, 0.0f}, { 1.0f,  0.0f}},
+        {{-1.0f / aspect, -1.0f, 0.0f}, { 0.0f,  1.0f}},
+        {{ 1.0f / aspect, -1.0f, 0.0f}, { 1.0f,  1.0f}},
     };
 
     // リソースの設定
